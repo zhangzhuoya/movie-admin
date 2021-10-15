@@ -23,11 +23,6 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@types/node@^16.11.0":
-  version "16.11.0"
-  resolved "https://npmjs.dykt123.com/@types%2fnode/-/node-16.11.0.tgz#4b95f2327bacd1ef8f08d8ceda193039c5d7f52e"
-  integrity sha512-8MLkBIYQMuhRBQzGN9875bYsOhPnf/0rgXGo66S2FemHkhbn9qtsz9ywV1iCG+vbjigE4WUNVvw37Dx+L0qsPg==
-
 ansi-styles@^3.2.1:
   version "3.2.1"
   resolved "https://npmjs.dykt123.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
