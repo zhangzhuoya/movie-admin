@@ -26,7 +26,8 @@ export class Movie {
     @IsNotEmpty({message: "是否为经典影片不可以为空"})
     public isClasic: boolean
 
+    @IsNotEmpty({message: "描述信息不可以为空"})
     public desc: boolean
-
+    @IsNotEmpty({message: "图片背景不能为空"})
     public poster: string;
 }

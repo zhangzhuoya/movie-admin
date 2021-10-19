@@ -6,3 +6,4 @@ m.types=['dd']
 validate(m).then(res=>{
     console.log(res);
 })
+// 将 plain Object转化为
