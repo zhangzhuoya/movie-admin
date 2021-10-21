@@ -19,12 +19,14 @@
   },
   "homepage": "https://github.com/zhangzhuoya/movie-admin#readme",
   "devDependencies": {
+    "@types/mongoose": "^5.11.97",
     "tslint": "^6.1.3",
     "typescript": "^4.4.4"
   },
   "dependencies": {
     "class-transformer": "^0.4.0",
     "class-validator": "^0.13.1",
+    "mongoose": "^6.0.11",
     "reflect-metadata": "^0.1.13"
   }
 }

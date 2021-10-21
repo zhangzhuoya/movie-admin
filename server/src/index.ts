@@ -1,14 +1,28 @@
 import "reflect-metadata"
-import { Movie } from "./entities/Movie";
-import { validate } from "class-validator";
-import { plainToClass } from 'class-transformer'
-const m:object = {};
-// m.types=['dd']
-// 将plain Object转化为movie对象
-const movie = plainToClass(Movie, m as object)
-console.log(movie);
-
-validate(movie).then(res=>{
+import {MovieModel} from "./db"
+import {MovieService} from './services/MovieService'
+MovieModel.find(res=>{
     console.log(res);
 })
-// 将 plain Object转化为
+function getRandom(min:number,max:number) {
+    const dec = max -min;
+    return Math.floor(Math.random()* dec+min);
+}
+const m: any = {
+    name: "流浪地球",
+    timeLong: 20,
+    areas: ["中国大陆", "美国"],
+    types: ["灾难", "科幻"],
+};
+for(let i =1; i<=100;i++){
+    const obj:any = {
+    }
+    obj.name = "电影名字"+ (i+1);
+    obj.timeLong = getRandom(20,220)
+    obj.areas=["中国大陆", "美国"]
+    obj.types= ["灾难", "科幻"],
+    MovieService.add(obj)
+}
+// MovieService.add(m).then(res=>{
+//     console.log(res);
+// })
